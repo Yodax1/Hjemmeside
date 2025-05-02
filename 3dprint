@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FairDice - Christian Bukkjær</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        section {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form input, form textarea, form button {
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FairDice</h1>
+    <p>v/ Christian Bukkjær</p>
+</header>
+
+<section>
+    <h2>Designmuligheder</h2>
+    <div class="gallery">
+        <!-- Indsæt billeder af dine designs her -->
+        <img src="design1.jpg" alt="Design 1">
+        <img src="design2.jpg" alt="Design 2">
+        <img src="design3.jpg" alt="Design 3">
+    </div>
+</section>
+
+<section>
+    <h2>Farvemuligheder</h2>
+    <div class="gallery">
+        <!-- Indsæt billeder af dine farver her -->
+        <img src="color1.jpg" alt="Farve 1">
+        <img src="color2.jpg" alt="Farve 2">
+        <img src="color3.jpg" alt="Farve 3">
+    </div>
+</section>
+
+<section>
+    <h2>Bestil dine produkter</h2>
+    <form action="mailto:dinmail@eksempel.dk" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Dit navn" required>
+        <input type="email" name="email" placeholder="Din email" required>
+        <textarea name="message" rows="5" placeholder="Hvad vil du bestille? Skriv dine ønsker her..." required></textarea>
+        <button type="submit">Send bestilling</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 FairDice - Christian Bukkjær. Alle rettigheder forbeholdes.
+</footer>
+
+</body>
+</html>
